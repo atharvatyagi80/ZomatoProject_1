@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     /*This is for box model so that browsers like safari can also easily understand it*/
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5px;
+    background-color: #fff;
+}
+
+.navbar_brand{
+    width: 130px;
+}
+
+.navbar_logo{
+    width: 100%;
+}
+
+
+.nav_item{
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+);
+color: #fff;
+border: none;
+padding: 12px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.nav_item:hover{
+    border: 2px solid pink;
+}
+
+@media (min-width: 768px){
+    .navbar{
+    padding: 10px 25px;
+    }
+}
+
+@media (min-width: 1020px){
+    .navbar{
+        padding: 10px 40px;
+    }
+    .navbar_brand{
+        width: 150px;
+    }
+    .nav_item{
+        padding: 14px;
+        font-size: 20px;
+    }
+}
