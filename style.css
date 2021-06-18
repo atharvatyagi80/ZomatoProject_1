@@ -9,6 +9,7 @@ body{
     background-color: #ebf2ff;
 }
 
+/* Navbar */
 .navbar{
     display: flex;
     align-items: center;
@@ -25,8 +26,7 @@ body{
     width: 100%;
 }
 
-
-.nav_item{
+.button_primary{
     background-image: linear-gradient(
     to right,
     #ff512f 0%,
@@ -44,10 +44,111 @@ cursor: pointer;
     border: 2px solid pink;
 }
 
+/* Navbar End */
+
+.container{
+    max-width: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.hero_container{
+    margin-top: 5px;
+}
+
+.hero_image_container{
+    width: 100%;
+}
+
+.hero_image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero_text_container{
+    width: 100%;
+}
+
+.hero_text{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+/* Food Card */
+
+.explore_menu_text{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.food_card_desxription{
+    border-radius: 8px;
+}
+.food_card_image_container{
+    width: 100%;
+}
+
+.food_image{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.food_card{
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.food_card_description{
+    padding: 15px;
+}
+
 @media (min-width: 768px){
     .navbar{
     padding: 10px 25px;
     }
+    .hero_container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .explore_menu_list{
+        display: flex;
+        gap: 15px;
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+
+    #pizza_card{
+        margin-top: -25px;
+        margin-bottom: 30px;
+    }
+    .explore_menu_view_more{
+        display: flex;
+        justify-content: center;
+    }
+    .explore_menu_container{
+        position: relative;
+    }
+    .explore_menu_gradient_bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%);
+    z-index: -3;
+    transform: skewY(-5deg);
+    }
+
 }
 
 @media (min-width: 1020px){
@@ -57,8 +158,24 @@ cursor: pointer;
     .navbar_brand{
         width: 150px;
     }
-    .nav_item{
+    .button_primary{
         padding: 14px;
         font-size: 20px;
     }
+    .container{
+        max-width: 950px;
+    }
+    .hero_text{
+        font-size: 50px;
+    }
+
+    .explore_menu_list{
+        gap: 40px;
+    }
+
+    .explore_menu_text{
+        font-size: 50px;
+    }
+
+
 }
