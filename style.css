@@ -16,6 +16,10 @@ body{
     justify-content: space-between;
     padding: 8px 5px;
     background-color: #fff;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 5;
 }
 
 .navbar_brand{
@@ -120,6 +124,7 @@ cursor: pointer;
 .food_card_description{
     padding: 15px;
 }
+
 
 /* Restaurent */
 
