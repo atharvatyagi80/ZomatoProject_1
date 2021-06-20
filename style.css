@@ -123,6 +123,9 @@ cursor: pointer;
 
 /* Restaurent */
 
+.restaurent_container{
+    margin-top: 80px;
+}
 .restaurent_text{
     font-size: 30px;
     margin-top: 50px;
@@ -166,6 +169,8 @@ cursor: pointer;
     width: 100%;
     height: 100%;
     border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -181,7 +186,8 @@ cursor: pointer;
     text-align: center;
 }
 
-.email_form_elements{
+.email_form{
+    width: 100%;
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -332,6 +338,42 @@ border-radius: 12px 12px 0px 0px;
         font-size: 40px;
     }
 
+    /* Email */
+
+    .email_text{
+        font-size: 35px;
+    }
+
+    .email_form_elements{
+        padding: 0px 0px;
+    }
+    .email_form_input{
+        width: 400px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    /* Quote */
+
+    .quote_container{
+        height: 350px;
+    }
+    .quote_text{
+        font-size: 40px;
+    }
+
+    /* Footer */
+
+    .footer_container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer_items_container{
+        padding: 30px 0px;
+    }
+    .footer_items_list{
+        font-size: 15px;
+    }
 }
 
 /* small PC screen */
